@@ -28,11 +28,13 @@ export const generateNotes = async (file) => {
       }
       const errorData = await response.json().catch(() => ({}));
       throw new Error(errorData.message || `Server error: ${response.status}`);
+      
     }
 
     const data = await response.json();
     console.log("✅ Data received successfully:", data);
     return data;
+
   } catch (error) {
     if (error.message === "Failed to fetch") {
       throw new Error("Could not reach n8n. Please ensure n8n is running on port 5678.");
