@@ -1,20 +1,20 @@
 {
-  "name": "Docura AI",
+  "name": "My workflow",
   "nodes": [
     {
       "parameters": {
         "respondWith": "json",
-        "responseBody": "={{ $json.content }}",
+        "responseBody": "={\n  \"notes\": \"{{ $json.content }}\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
       "position": [
-        1744,
-        176
+        848,
+        64
       ],
-      "id": "36399a63-5cae-4e9a-83c2-82785d4adf42",
-      "name": "Respond to Webhook1",
+      "id": "7f8fbb8a-ebdb-445a-bd90-4a0cab47d21e",
+      "name": "Respond to Webhook",
       "alwaysOutputData": true,
       "retryOnFail": true
     },
@@ -30,11 +30,11 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
       "position": [
-        944,
-        176
+        48,
+        64
       ],
-      "id": "e2820bb6-9df3-488a-825a-87ebe5e49373",
-      "name": "Webhook1",
+      "id": "4e36ef1a-0c26-45f4-8601-27f9bd9d3307",
+      "name": "Webhook",
       "webhookId": "3f46a945-946d-4ca5-a3e1-58b7f942e562",
       "alwaysOutputData": true,
       "retryOnFail": true
@@ -60,11 +60,11 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1.1,
       "position": [
-        1392,
-        176
+        496,
+        64
       ],
-      "id": "8925d2f2-49cf-4c51-af8e-eb20bd5c4ec6",
-      "name": "Message a model1",
+      "id": "44407807-4047-4fe2-93a4-569b9cb50598",
+      "name": "Message a model",
       "alwaysOutputData": true,
       "retryOnFail": true,
       "credentials": {
@@ -83,44 +83,44 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1.1,
       "position": [
-        1168,
-        176
+        272,
+        64
       ],
-      "id": "b650dc5e-7a8f-4791-b24f-45f8c3a9bccc",
-      "name": "Extract from File1",
+      "id": "24f55238-cdcd-425a-a3fb-f2accd97f301",
+      "name": "Extract from File",
       "alwaysOutputData": true,
       "retryOnFail": true
     }
   ],
   "pinData": {},
   "connections": {
-    "Webhook1": {
+    "Webhook": {
       "main": [
         [
           {
-            "node": "Extract from File1",
+            "node": "Extract from File",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Message a model1": {
+    "Message a model": {
       "main": [
         [
           {
-            "node": "Respond to Webhook1",
+            "node": "Respond to Webhook",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Extract from File1": {
+    "Extract from File": {
       "main": [
         [
           {
-            "node": "Message a model1",
+            "node": "Message a model",
             "type": "main",
             "index": 0
           }
@@ -135,7 +135,7 @@
     "timeSavedMode": "fixed",
     "callerPolicy": "workflowsFromSameOwner"
   },
-  "versionId": "980ffcae-352b-43a5-9186-22d445167464",
+  "versionId": "fabdd83b-3345-4e36-8aa1-791e1cc1da87",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "b397d34794619c669355cab87de17ebab68741f1cfdaabcc43f52b93dd93974a"
