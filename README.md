@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Docura AI 🚀 
+### **Intelligence for your documents.**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Docura AI is a high-end, professional document analysis platform designed to transform complex PDF data into structured, actionable intelligence. Built with a "Sapphire & Slate" aesthetic, it provides a world-class user experience for researchers, students, and professionals.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Final Interface & Workflow (Proof of Work)
 
-### `npm start`
+### **1. Professional Frontend **
+The user-facing platform features a deep midnight blue palette, custom "Select Document" actions, and a persistent history sidebar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Frontend Interface](../ss/Screenshot%202026-01-03%20162418.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **2. n8n Backend Intelligence Workflow**
+The power behind Docura AI is a sophisticated n8n workflow that handles PDF parsing, Gemini AI orchestration, and structured response delivery.
 
-### `npm test`
+![n8n Workflow](../ss/Screenshot%202026-01-03%20162559.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **💎 Sapphire & Slate UI**: A custom-built, professional dark theme with glassmorphism and premium micro-animations.
+- **🧠 AI-Powered Insights**: Leverages Gemini AI models via n8n workflows for deep document understanding.
+- **📂 Modern "Upload PDF" Action**: A completely custom file selection experience that replaces browser defaults with a professional Cyber-button.
+- **📝 Markdown Support**: Rich formatting for generated notes, including headers, lists, and bold text for maximum readability.
+- **🕒 Persistent History**: Local storage integration to save and revisit your previous analyses instantly.
+- **⚡ Real-time Feedback**: Interactive progress states and smooth transitions using Framer Motion.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Technology Stack
 
-### `npm run eject`
+- **Frontend**: React.js, Framer Motion, Lucide Icons
+- **Styling**: Vanilla CSS (Custom Variable Design System)
+- **Backend Workflow**: n8n
+- **AI Core**: Google Gemini
+- **Document Processing**: PDF Text Extraction
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Prerequisites**
+- Node.js installed
+- n8n instance running with the provided workflow (`flow.json`)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Installation**
 
-## Learn More
+1. Clone the repository
+2. Navigate to the frontend directory:
+   ```bash
+   cd pdf_to_notes
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🏆 Project Goal
+To provide a high-end, "big company" feel to document analysis, making AI tools not only functional but beautiful and intuitive to use.
