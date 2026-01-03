@@ -1,55 +1,66 @@
-# Docura AI 🚀 
-### **Intelligence for your documents.**
+# Docura AI
+### Intelligence for your documents.
 
-Docura AI is a high-end, professional document analysis platform designed to transform complex PDF data into structured, actionable intelligence. Built with a "Sapphire & Slate" aesthetic, it provides a world-class user experience for researchers, students, and professionals.
+Docura AI is a professional document analysis platform designed to transform complex PDF data into structured, actionable intelligence. Built with a "Sapphire & Slate" aesthetic, it provides a high-end experience for researchers, students, and professionals requiring deep document insights.
 
 ---
 
-## 📸 Final Interface & Workflow (Proof of Work)
+## Final Interface & Workflow (Proof of Work)
 
-### **1. Professional Frontend **
-The user-facing platform features a deep midnight blue palette, custom "Select Document" actions, and a persistent history sidebar.
+### 1. Professional Frontend
+The platform features a sophisticated midnight blue palette, custom document selection actions, and a persistent history sidebar for seamless navigation.
 
 ![Frontend Interface](../ss/Screenshot%202026-01-03%20162418.png)
 
-### **2. n8n Backend Intelligence Workflow**
-The power behind Docura AI is a sophisticated n8n workflow that handles PDF parsing, Gemini AI orchestration, and structured response delivery.
+### 2. Backend Intelligence Workflow
+Docura AI is powered by a robust n8n workflow that orchestrates PDF parsing, Gemini AI analysis, and structured response delivery.
 
 ![n8n Workflow](../ss/Screenshot%202026-01-03%20162559.png)
 
 ---
 
-## ✨ Key Features
+## Detailed Workflow Explanation
 
-- **💎 Sapphire & Slate UI**: A custom-built, professional dark theme with glassmorphism and premium micro-animations.
-- **🧠 AI-Powered Insights**: Leverages Gemini AI models via n8n workflows for deep document understanding.
-- **📂 Modern "Upload PDF" Action**: A completely custom file selection experience that replaces browser defaults with a professional Cyber-button.
-- **📝 Markdown Support**: Rich formatting for generated notes, including headers, lists, and bold text for maximum readability.
-- **🕒 Persistent History**: Local storage integration to save and revisit your previous analyses instantly.
-- **⚡ Real-time Feedback**: Interactive progress states and smooth transitions using Framer Motion.
+The Docura AI backend operates through a precisely choreographed sequence in n8n to ensure high-quality analysis:
+
+1.  **Webhook Integration**: The frontend sends a POST request containing the PDF file to a secure n8n webhook endpoint.
+2.  **PDF Data Extraction**: The `Extract from File` node processes the binary data, converting the PDF content into sanitized text for analysis.
+3.  **Gemini AI Orchestration**: The extracted text is passed to the Google Gemini model (Gemini 1.5 Flash). A specialized system prompt instructs the AI to act as a professional study assistant, generating well-structured, exam-ready Markdown notes.
+4.  **Structured Response**: The final intelligence is formatted into a JSON object and delivered back to the frontend via the `Respond to Webhook` node, ensuring immediate availability of insights.
 
 ---
 
-## 🛠️ Technology Stack
+## Key Features
+
+- **Sapphire & Slate UI**: A custom-engineered professional dark theme featuring glassmorphism and subtle micro-animations.
+- **AI-Powered Insights**: Deep document understanding leveraged through Google Gemini models.
+- **Modern Document Actions**: A bespoke file selection experience that replaces standard browser defaults with a professional Cyber-button interface.
+- **Markdown-Optimized Output**: Generated notes utilize rich Markdown formatting for maximum readability and structure.
+- **Persistent History**: Integrated local storage allows users to archive and revisit previous analyses instantly.
+- **Real-time Feedback**: Interactive progress states and fluid transitions powered by Framer Motion.
+
+---
+
+## Technology Stack
 
 - **Frontend**: React.js, Framer Motion, Lucide Icons
-- **Styling**: Vanilla CSS (Custom Variable Design System)
-- **Backend Workflow**: n8n
-- **AI Core**: Google Gemini
-- **Document Processing**: PDF Text Extraction
+- **Styling**: Vanilla CSS (Custom Design System)
+- **Backend**: n8n (Workflow Automation)
+- **AI Engine**: Google Gemini
+- **Processing**: PDF Text Extraction
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### **Prerequisites**
-- Node.js installed
-- n8n instance running with the provided workflow (`flow.json`)
+### Prerequisites
+- Node.js environment
+- n8n instance with the provided workflow (`Docura_Workflow.json`)
 
-### **Installation**
+### Installation
 
-1. Clone the repository
-2. Navigate to the frontend directory:
+1. Clone the repository.
+2. Navigate to the project directory:
    ```bash
    cd pdf_to_notes
    ```
@@ -57,12 +68,12 @@ The power behind Docura AI is a sophisticated n8n workflow that handles PDF pars
    ```bash
    npm install
    ```
-4. Start the development server:
+4. Initialize the application:
    ```bash
    npm start
    ```
 
 ---
 
-## 🏆 Project Goal
-To provide a high-end, "big company" feel to document analysis, making AI tools not only functional but beautiful and intuitive to use.
+## Project Objective
+To deliver a premium, enterprise-grade document analysis utility that combines powerful AI-driven functionality with a refined, intuitive user interface.
