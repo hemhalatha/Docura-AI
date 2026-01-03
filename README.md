@@ -10,12 +10,16 @@ Docura AI is a professional document analysis platform designed to transform com
 ### 1. Professional Frontend
 The platform features a sophisticated midnight blue palette, custom document selection actions, and a persistent history sidebar for seamless navigation.
 
-![Frontend Interface](../ss/Screenshot%202026-01-03%20162418.png)
+<div align="center">
+  <img src="./Screenshot 2026-01-03 162418.png" alt="Frontend Interface" width="800">
+</div>
 
 ### 2. Backend Intelligence Workflow
 Docura AI is powered by a robust n8n workflow that orchestrates PDF parsing, Gemini AI analysis, and structured response delivery.
 
-![n8n Workflow](../ss/Screenshot%202026-01-03%20162559.png)
+<div align="center">
+  <img src="./Screenshot 2026-01-03 162559.png" alt="n8n Workflow" width="800">
+</div>
 
 ---
 
